@@ -157,7 +157,7 @@ private void jButton1ActionPerformed() {
         return;
     }
 
-    // Validación de la edad   
+    
     int edad;
     try {
         edad = Integer.parseInt(edadText);
