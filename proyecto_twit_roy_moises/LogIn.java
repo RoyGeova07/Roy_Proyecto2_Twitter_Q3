@@ -183,11 +183,11 @@ public class LogIn {
         // Restaurar la cuenta si estaba desactivada
         UsuarioManager.activarCuenta(username);
 
-        // Cargar el menú principal
+        
         MenuPrincipal menu = new MenuPrincipal(username);
         menu.mostrarMenu();
 
-        // Cerrar la ventana de login después de iniciar sesión
+        
         frame.dispose();
     } else {
         // Si las credenciales son incorrectas, mostrar un mensaje de error
