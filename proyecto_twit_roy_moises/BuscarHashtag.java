@@ -73,9 +73,9 @@ public class BuscarHashtag {
                 if (twit != null) {
                     String creador = twit.getUsername();
                     
-                    // Verificar si el usuario que publicó el tweet está activo
+                   
                     if (!UsuarioManager.UsuarioActivo(creador)) {
-                        continue;  // Si el usuario está desactivado, no mostramos el tweet
+                        continue;  
                     }
 
                     JTextPane tweetPane = new JTextPane();
