@@ -32,7 +32,7 @@ public class PerfilVisual extends javax.swing.JFrame {
 }
 
     /**
-     * Método para cargar los datos del perfil del usuario seleccionado
+     * 
      */
     private void cargarDatosPerfil() {
 
@@ -303,7 +303,7 @@ public class PerfilVisual extends javax.swing.JFrame {
         miPerfil.actualizarSeguidoresYSeguidosMiPerfil();  
 
         if (manejoPerfil.sigueUsuario(usuarioActual, username)) {
-            // Confirmación antes de dejar de seguir
+            r
             int confirmacion = JOptionPane.showConfirmDialog(this,
                     "¿Quieres dejar de seguir a " + username + "?",
                     "Confirmación",
