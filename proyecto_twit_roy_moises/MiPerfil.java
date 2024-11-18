@@ -95,7 +95,7 @@ public class MiPerfil extends javax.swing.JFrame {
                 System.out.println("Cargando imagen genérica");
             }
 
-            // Verificación de la ruta de la imagen
+            
             if (getClass().getResource(imagePath) == null) {
                 System.out.println("Error: Imagen no encontrada en la ruta: " + imagePath);
                 return;
@@ -143,7 +143,7 @@ public class MiPerfil extends javax.swing.JFrame {
 
         
         for (String usuario : usuariosSeguidos) {
-            // Verificar si el usuario seguido está activo
+         
             if (!UsuarioManager.UsuarioActivo(usuario)) {
                 continue; //  aqui se omite los usuarios cuya cuenta esta desactivada
             }
@@ -464,7 +464,7 @@ public class MiPerfil extends javax.swing.JFrame {
             
             int confirmacion = JOptionPane.showConfirmDialog(this,
                     "¿Estás seguro de que deseas desactivar tu cuenta?",
-                    "Confirmación", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+                    "Confirmacion", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
 
             if (confirmacion == JOptionPane.YES_OPTION) {
                 
@@ -477,7 +477,7 @@ public class MiPerfil extends javax.swing.JFrame {
                 UsuarioManager.ocultarTwitsDeUsuarioEnSeguidores(usuarioActual);
 
                 
-                JOptionPane.showMessageDialog(this, "Tu cuenta ha sido desactivada. Cerrando sesión...");
+                JOptionPane.showMessageDialog(this, "Tu cuenta ha sido desactivada. Cerrando sesion...");
 
                
                 realizarLogout();
